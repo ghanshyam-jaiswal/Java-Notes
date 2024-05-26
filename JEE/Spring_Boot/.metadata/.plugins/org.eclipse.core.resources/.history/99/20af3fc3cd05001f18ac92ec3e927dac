@@ -1,0 +1,9 @@
+package com.jsp.springdatajpa.repository;
+
+public class CarService {
+
+	public CarService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

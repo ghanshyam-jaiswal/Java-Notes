@@ -1,0 +1,9 @@
+package com.java;
+import java.sql.*;
+public class JdbcPractice {
+
+	public static void main(String[] args) {
+
+	}
+
+}

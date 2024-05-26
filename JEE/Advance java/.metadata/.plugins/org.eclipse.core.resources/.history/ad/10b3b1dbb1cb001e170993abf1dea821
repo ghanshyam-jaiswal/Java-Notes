@@ -1,0 +1,16 @@
+package com.java;
+
+import java.util.Arrays;
+import java.util.Scanner;
+public class Practice {
+	
+	public static void main(String[] args) {
+		int in=new Integer(50);
+		System.out.println(in);
+		String s="11";
+		int i=Integer.parseInt(s);
+		
+		
+	}
+}
+

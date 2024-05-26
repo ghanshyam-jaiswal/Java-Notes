@@ -1,0 +1,29 @@
+package com.java;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Fetch;
+
+@Entity 
+@Table(name="pr")
+public class Practice {
+	@Id
+	private int id;
+	private String name;
+	@ManyToOne
+	private Person person;
+	
+	public Practice(int id, String name, Person person) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.person = person;
+	}
+	
+	
+}

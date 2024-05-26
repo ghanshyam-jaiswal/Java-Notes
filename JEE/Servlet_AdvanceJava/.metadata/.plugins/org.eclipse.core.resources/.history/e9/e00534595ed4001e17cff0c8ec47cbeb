@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name">
+		<label for="name">Email:</label>
+		<input type="email" id="name">
+		<label for="name">Password:</label>
+		<input type="password" id="name">
+		<label for="name">Phone No:</label>
+		<input type="tel" id="name">
+		<label for="name">Submit:</label>
+		<input type="submit" id="name">
+	</form>
+
+</body>
+</html>

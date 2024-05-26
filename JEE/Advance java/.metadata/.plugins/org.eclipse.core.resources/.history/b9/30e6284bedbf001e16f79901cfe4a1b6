@@ -1,0 +1,32 @@
+package com.java;
+
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class FirstJdbc {
+
+	public static void main(String[] args) {
+		try {
+			Class.forName("org.postgresql.Driver");
+			String url="jdbc:postgresql://localhost:5432/student";
+			String uname="postgres";
+			String psw="root";
+			Connection connection=DriverManager.getConnection(url,uname,psw);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String query="create table Gk(id integer Primary key, Name varchar(30) not null";
+		Statement statement=connection.createStatement();
+		statement.execute();
+		
+		
+		
+		
+	}
+}

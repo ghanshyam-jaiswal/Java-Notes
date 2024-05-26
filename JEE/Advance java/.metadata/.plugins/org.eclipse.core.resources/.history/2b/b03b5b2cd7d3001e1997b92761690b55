@@ -1,0 +1,36 @@
+package com.java;
+
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.*;
+
+import org.postgresql.Driver;
+public class Practice {
+	
+	public static void main(String[] args) {
+			
+		try {
+			DriverManager.registerDriver(new Driver());
+			Connection connection=DriverManager.getConnection("jdbc:postgresql://localhost:5432/student","postgres","root");
+			Statement statement=connection.createStatement();
+			statement.execute("insert into example values(23,'TwentyThre');");
+			connection.close();
+			System.out.println("done...");
+			
+			
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+		
+	}
+}
+

@@ -1,0 +1,14 @@
+package com.java;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Samsung implements Mobile {
+
+	@Override
+	public void add() {
+		System.out.println("samsung is calling....");
+		
+	}
+
+}

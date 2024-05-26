@@ -1,0 +1,11 @@
+package com.java;
+
+public class Apple implements Mobile {
+
+	@Override
+	public void add() {
+		System.out.println("apple is calling");
+		
+	}
+
+}

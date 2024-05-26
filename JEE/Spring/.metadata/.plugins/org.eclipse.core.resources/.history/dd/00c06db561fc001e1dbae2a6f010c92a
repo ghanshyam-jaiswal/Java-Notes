@@ -1,0 +1,17 @@
+package com.java;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		ConfigurableApplicationContext context=	new AnnotationConfigApplicationContext(Config.class);
+		Mobile mobile=(Mobile) context.getBean("user");
+		System.out.println(apple);
+		apple.add();
+	}
+}

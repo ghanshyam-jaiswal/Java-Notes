@@ -1,0 +1,53 @@
+package com.java;
+
+import java.sql.Time;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+@Entity
+public class Person {
+	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	private String name;
+	@OneToOne
+	private Practice practice;
+	
+	private Time createTime;
+	private Time updateTime;
+	
+	public Practice getPractice() {
+		return practice;
+	}
+	public void setPractice(Practice practice) {
+		this.practice = practice;
+	}
+	public int getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Person() {
+
+	}
+	public Person(int id, String name, Practice practice) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.practice = practice;
+	}
+	
+	
+	
+}

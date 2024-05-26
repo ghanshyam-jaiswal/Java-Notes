@@ -1,0 +1,16 @@
+package com.java;
+
+public class Child extends Parent {
+
+	Child(int id, String name) {
+		super(id, name);
+		
+	}
+
+	public static void main(String[] args) {
+
+		Child c=new Child(5,"gk");
+		c.getName();
+	}
+
+}

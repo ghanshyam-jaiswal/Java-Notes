@@ -1,0 +1,16 @@
+package com.java;
+
+import java.sql.*;
+import org.postgresql.Driver;
+
+public class RegisterJdbc {
+
+	public static void main(String[] args) {
+		
+		Driver driver=new Driver();
+		Connection connection=DriverManager.registerDriver(driver);
+		
+		
+	}
+
+}

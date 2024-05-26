@@ -1,0 +1,14 @@
+package com.jsp;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Subject {
+
+	@Id
+	private int id;
+	private String subjectName;
+	private int marks;
+	private Student student;
+}

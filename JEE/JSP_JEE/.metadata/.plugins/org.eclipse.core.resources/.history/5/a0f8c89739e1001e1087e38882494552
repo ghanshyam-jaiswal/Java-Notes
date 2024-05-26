@@ -1,0 +1,22 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String");
+		String name=sc.nextLine();
+		
+		String newString[]=name.split(" ");
+		String add="";
+		
+//		String[] words = name.split(" ");
+//		String add="";
+//		for(int i=words.length-1;i>=0;i--) {
+//			add=add+words[i]+" ";
+//		}
+//		System.out.println(add);
+		
+		
+	}
+}

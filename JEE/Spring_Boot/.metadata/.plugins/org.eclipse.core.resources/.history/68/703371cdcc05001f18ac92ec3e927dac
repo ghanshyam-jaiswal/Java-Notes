@@ -1,0 +1,5 @@
+package com.jsp.springdatajpa.repository;
+
+public interface CarRepository {
+
+}

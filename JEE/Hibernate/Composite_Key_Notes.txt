@@ -1,0 +1,29 @@
+
+@Embeddable
+class Primarykey implements Serializableś{
+	
+	private datamembers
+	getter and setter
+	constructor 
+	override the hashcode and equls
+
+}
+
+@Entity
+class Employee{
+	
+	Make it entity class
+	
+	@Embeddedid
+	private Primarykey pkey;
+	private datamembers
+
+	getter and setter
+	constructor 	
+}
+
+class DriverClass{
+	
+	EntityManagerFactory,EntityManager,EntityTransaction
+
+}

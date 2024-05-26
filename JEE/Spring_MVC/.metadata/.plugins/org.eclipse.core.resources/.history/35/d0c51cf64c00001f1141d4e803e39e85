@@ -1,0 +1,21 @@
+package com.jsp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.jsp.dao.StudentDao;
+import com.jsp.entity.Student;
+
+@Controller
+public class StudentController {
+
+	@Autowired
+	StudentDao dao;
+	
+	public ModelAndView saveStudent(Student student) {
+		
+		ModelAndView view=new ModelAndView("home.jsp");
+//		view.addObject("a",new User());
+	}
+}

@@ -1,0 +1,25 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number");
+		int org=sc.nextInt();
+		int num=org;
+		int store=0;
+		while(num>0) {
+			int mod=num%10;
+			store=store*10+mod;
+			num=num/10;
+		}if(store==org) {
+			
+			System.out.println();
+		}
+		
+		
+		
+		
+		
+	}
+}

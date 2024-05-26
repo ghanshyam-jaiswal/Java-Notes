@@ -1,0 +1,27 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number");
+		int num=sc.nextInt();
+		int sum=0;
+		int org=num;
+		for(int i=1;i<=org;i++) {
+			
+			if(org%i==0) {
+				sum=sum+i;
+			}
+		}
+		if(sum==num) {
+			System.out.println("perfect num");
+		}
+		else {
+			System.out.println("NOT");
+		}
+		
+		
+		
+	}
+}

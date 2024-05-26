@@ -1,0 +1,21 @@
+package com.jsp;
+
+import java.util.Scanner;
+
+public class MainClass {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter num");
+		int org=sc.nextInt();
+		int num=org;
+		int count=0;
+		for(int i=num;num>0;count++) {
+			num=num/10;
+			
+		}
+		System.out.println("digit: "+count);
+		
+		
+	}
+}

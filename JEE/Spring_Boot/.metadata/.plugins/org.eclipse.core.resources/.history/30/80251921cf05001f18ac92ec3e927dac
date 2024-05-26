@@ -1,0 +1,17 @@
+package com.jsp.springdatajpa.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jsp.springdatajpa.repository.CarService;
+
+@RestController
+public class CarController {
+
+	@Autowired
+	CarService carService;
+	
+	
+	
+
+}

@@ -1,0 +1,38 @@
+package com.java;
+import java.util.Scanner;
+import java.sql.*;
+public class Practice {
+	
+	static int count=0;
+	public void m1(){
+		System.out.println("m1()");
+		Practice.m2();
+	}
+	public static void m2() {
+		System.out.println("static m2()");
+		Practice p1=new Practice();
+		Practice.count++;
+		if(count==10) {
+			System.out.println("stop");
+		}
+		else {
+			p1.m1();
+		}
+		
+	}
+		public static void main(String[] args) {
+		System.out.println("I am main");
+		Practice p=new Practice();
+		p.m1();
+		
+		
+		
+		
+		
+	}
+}
+
+class Shyam{
+	 int num=10;
+	 static int num1=20;
+}

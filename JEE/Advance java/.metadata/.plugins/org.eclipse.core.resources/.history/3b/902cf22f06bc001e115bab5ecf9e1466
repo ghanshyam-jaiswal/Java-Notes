@@ -1,0 +1,39 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		//System.out.println("Enter Number");
+		for(int org=1;org<=1000;org++) {
+			
+		
+		//int org=sc.nextInt();
+		int num=org;
+		int sum=0;
+		int count=0;
+		while(num>0) {
+			num=num/10;
+			count++;
+		}
+		num=org;
+		while(num>0){
+			int mod=num%10;
+			int mul=1;
+			for(int i=1;i<=count;i++) {
+				mul=mul*mod;
+			}
+			sum=sum+mul;
+			num=num/10;
+		}
+		if(org==sum) {
+			System.out.println("Armstrong");
+		}
+		else {
+			System.out.println("NOT ARM");
+		}
+		
+	}
+	}
+
+}

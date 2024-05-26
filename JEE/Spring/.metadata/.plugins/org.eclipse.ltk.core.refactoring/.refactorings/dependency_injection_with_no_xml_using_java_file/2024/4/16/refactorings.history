@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Config.java&apos; to &apos;dependency_injection_for_interface/src/test/java&apos;&#x0D;&#x0A;- Original project: &apos;dependency_injection_with_no_xml_using_java_file&apos;&#x0D;&#x0A;- Destination element: &apos;dependency_injection_for_interface/src/test/java&apos;&#x0D;&#x0A;- Original element: &apos;com.java.config.Config.java&apos;" description="Copy compilation unit" destination="=dependency_injection_for_interface/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.java.config{Config.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1713319846402" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,28 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String");
+		String name=sc.nextLine();
+		
+		name=name.toLowerCase();
+		char c[]=name.toCharArray();
+		int vowel=0;
+		int consonant=0;
+		int another=0;
+		for(int i=0;i<c.length;i++) {
+			if(c[i]=='a'||c[i]=='i'||c[i]=='e'||c[i]=='o'||c[i]=='u') {
+				vowel++;
+			}else if(c[i]>='a'&&c[i]<='z') {
+				consonant++;
+			}else {
+				another++;
+			}
+		}System.out.println("vowel:"+vowel);
+		 System.out.println("consonant:"+consonant);
+		 System.out.println("another:"+another);
+		
+	}
+}

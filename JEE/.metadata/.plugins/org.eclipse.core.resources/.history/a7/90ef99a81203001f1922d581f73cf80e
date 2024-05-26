@@ -1,0 +1,38 @@
+package com.jsp;
+
+import java.util.Scanner;
+
+public class MainClass {
+	public static void main(String[] args) {
+		
+		
+		System.out.println("enter num");
+		int org=new Scanner(System.in).nextInt();
+		int num=org;
+		int count=0;
+		for(int i=num;num>0;count++) {
+			num=num/10;
+			
+		}
+//		System.out.println("digit: "+count);
+		num=org;
+		int store=0;
+		while(num>0) {
+			int mod=num%10;
+			int mul=1;
+			for(int i=1;i<=count;i++) {
+				mul=mul*mod;
+			}
+			store=store+mul;
+			num=num/10;
+		}
+		if(org==store) {
+			System.out.println("armstrong no");
+		}
+		else {
+			System.out.println("NOT");
+		}
+		
+		
+	}
+}

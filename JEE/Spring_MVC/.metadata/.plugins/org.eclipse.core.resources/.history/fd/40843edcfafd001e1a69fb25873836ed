@@ -1,0 +1,15 @@
+package com.jsp.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.jsp.entity.Student;
+
+@Controller
+public class StudentController {
+
+	public ModelAndView saveStudent(Student student) {
+		
+		ModelAndView view=new ModelAndView("home.jsp");
+	}
+}

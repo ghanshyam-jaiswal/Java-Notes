@@ -1,0 +1,36 @@
+package formExample;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet(name="form",urlPatterns="/save") 
+// this annotation is a 2nd way instead of servlet name and url pattern.
+public class Form extends HttpServlet{
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		String email=req.getParameter("email");
+		String password=req.getParameter("password");
+	
+		System.out.println(email);
+		System.out.println(password);
+		
+		PrintWriter pw=resp.getWriter();
+		pw.write("<html><body>");
+		pw.write("<h2>"+email+"</h2>");
+		pw.write("<h2>"+password+"</h2>");
+		pw.write("</html></body>");
+		
+//		resp.getWriter("<html><body>");
+//		resp.getWriter("<html><body>");
+	}
+
+}

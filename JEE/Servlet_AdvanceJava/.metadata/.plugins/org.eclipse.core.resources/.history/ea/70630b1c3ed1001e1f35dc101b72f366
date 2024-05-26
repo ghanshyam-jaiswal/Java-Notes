@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>index html</title>
+</head>
+<body>
+	
+	<-- 1. first priority to welcome-file-list(it accepts only one tag if I will write multiple then 
+		it will accept top to bottom order and accepts only one tag if 1st tag wrong then it will
+		show 404 not found on webpage and it will check for another tag)
+		
+	2. second index.html
+	3. 3rd index.htm
+	4. 4th index.jsp8 --!>
+	
+	<p>index html</p>
+	
+</body>
+</html>

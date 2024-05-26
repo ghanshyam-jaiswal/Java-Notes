@@ -1,0 +1,36 @@
+package com.java;
+
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class PersistControl {
+	public static void main(String[] args) {
+		EntityManagerFactory emf=Persistence.createEntityManagerFactory("java");
+		EntityManager em= emf.createEntityManager();
+		EntityTransaction et=em.getTransaction();
+		
+		
+		Practice p=new Practice();
+		p.setId(111);
+		p.setName("shyam");
+		p.setEmail("shyam@gmail.com");
+		p.setContact(7000365544L);
+		p.setLocation("gurgaon");
+		
+//		et.begin();
+//		em.persist(p);
+//		et.commit();
+//		System.out.println("done");	
+		
+//		Practice practice=em.find(Practice.class, 111);
+//		et.begin();
+//		em.remove(practice);
+//		et.commit();
+//		System.out.println(practice);
+		
+		
+	}
+}

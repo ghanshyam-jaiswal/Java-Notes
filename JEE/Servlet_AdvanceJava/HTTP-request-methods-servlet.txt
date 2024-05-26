@@ -1,0 +1,12 @@
+HTTP request methods:
+------------------------
+
+http defines a set of request methods to indicate the desired action to be preformed for a given resource.
+
+GET: The get method request a representation of the specified resource. Requests using get should only retrieve data.
+HEAD: The head method asks for a response identical to a get request, but without the response body.
+POST: The post method submits an entity to the specified resource, often causing a change in state or side effects on the server.
+PUT: The put method replaces all current representations of the target resource with the request payload.
+DELETE: The delete method deletes the specified resource.
+CONNECT: The connect method establishes a tunnel to be server identified by the target resource.
+OPTIONS: The options method describes the communication option for the target resource.s

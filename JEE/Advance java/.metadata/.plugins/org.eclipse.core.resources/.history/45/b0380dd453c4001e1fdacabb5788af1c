@@ -1,0 +1,27 @@
+package com.java;
+import java.util.Scanner;
+import java.sql.*;
+public class Practice {
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number");
+		int num=sc.nextInt();
+		int sum=0;
+		int mul=1;
+		while(num>0) {
+			int mod=num%10;
+			sum=sum+mod;
+			mul=mul*mod;
+			num=num/10;
+		}
+		if(sum==mul) {
+			System.out.println("spy no");
+		}
+		else {
+			System.out.println(NOT);
+		}
+				
+		
+	}
+}

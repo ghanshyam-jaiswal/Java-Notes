@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;config2.xml&apos; to &apos;xml_annotation_based_dependency_injection/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;dependency_injection_using_constructor&apos;&#x0D;&#x0A;- Destination element: &apos;xml_annotation_based_dependency_injection/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;config2.xml&apos;" description="Copy file" destination="=xml_annotation_based_dependency_injection/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="src/main/java/config2.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1712633040435" units="0" version="1.0"/>
+</session>

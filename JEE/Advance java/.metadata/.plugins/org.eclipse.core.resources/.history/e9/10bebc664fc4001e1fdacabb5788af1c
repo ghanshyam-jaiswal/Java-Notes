@@ -1,0 +1,24 @@
+package com.java;
+import java.util.Scanner;
+import java.sql.*;
+public class Practice {
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number");
+		int org=sc.nextInt();
+		int num=org;
+		int store=0;
+		for(int i=1;i<num;i++) {
+			if(num%i==0) {
+				store=store+i;
+			}
+		}
+		if(org==store) {
+			System.out.println(store+" : perfect no");
+		}
+		else {
+			System.out.println(store+" : not perfect");
+		}
+	}
+}

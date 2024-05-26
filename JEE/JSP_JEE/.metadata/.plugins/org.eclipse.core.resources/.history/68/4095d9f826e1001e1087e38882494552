@@ -1,0 +1,27 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String");
+		String name=sc.nextLine();
+//		name=name.toLowerCase();
+		char c[]=name.toCharArray();
+		int upper=0;
+		int lower=0;
+		for(int i=0;i<c.length;i++) {
+			if(c[i]>='a' && c[i]<='z') {
+				
+			}
+			else if(Character.isUpperCase(c[i])) {
+				upper++;
+			}else {
+				lower++;
+			}
+		}System.out.println("upper:"+upper);
+		System.out.println("lower:"+lower);
+		
+		
+	}
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SecondServlet</title>
+</head>
+<body>
+	<form action="page_a" method="post">
+		<label>Name:</label>
+		<input type="text" name="name">
+		<label>pass:</label>
+		<input type="password" name="pass">
+		<br>
+		<button type="submit">submit</button>
+	</form>
+</body>
+</html>

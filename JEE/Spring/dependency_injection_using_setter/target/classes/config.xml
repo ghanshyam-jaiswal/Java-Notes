@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="mobilee" class="dependency_injection_using_setter.Mobile">
+		<property name="id" value="1"></property>
+		<property name="model" value="Realme"></property>
+	</bean>
+	<bean id="myPerson" class="dependency_injection_using_setter.Person">
+		<property name="name" value="shyam"></property>
+		<property name="address"><value>gurgaon</value></property>
+		<property name="mobile" ref="mobilee"></property>
+		<property name="list">
+			<list>
+				<value>shyam</value>
+				<value>20</value>
+				<value>delhi</value>
+				<value>Developer</value>
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>gk</value>
+				<value>55</value>
+				<value>gurgaon</value>
+				<value>888888888888</value>
+			</set>
+		</property>
+		<property name="arr">
+			<array>
+				<value>1</value>
+				<value>2</value>
+				<value>99</value>
+				<value>0</value>		
+			</array>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="1" value="shyam"></entry>
+				<entry key="2" value="mumbai"></entry>
+				<entry key="3" value="55"></entry>
+			</map>
+		</property>
+	</bean>
+	
+	
+    
+
+</beans>

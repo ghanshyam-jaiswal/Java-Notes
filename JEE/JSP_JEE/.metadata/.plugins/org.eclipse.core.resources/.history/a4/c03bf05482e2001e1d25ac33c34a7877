@@ -1,0 +1,21 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String");
+		String name=sc.nextLine();
+		String newStr[] =name.split(" ");
+		
+		String add="";
+		for(int i=0;i<name.length();i++) {
+			if(i==name.charAt(1)) {
+				for(int j=name.length()-1;j>=0;j--) {
+					
+				}
+			}
+		}
+		
+	}
+}

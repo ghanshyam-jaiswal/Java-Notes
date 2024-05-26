@@ -1,0 +1,20 @@
+package com.java;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Fetch;
+
+class Practice{
+	 public static void main(String args[]) {
+		 String str = "hello world";
+		 Stirng reversed = new StringBuilder();
+		 System.out.println("Hello world");
+	 }
+}
+	
+

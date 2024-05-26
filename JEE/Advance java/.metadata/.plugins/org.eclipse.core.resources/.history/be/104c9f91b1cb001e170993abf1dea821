@@ -1,0 +1,14 @@
+package com.java;
+
+import java.util.Arrays;
+import java.util.Scanner;
+public class Practice {
+	
+	public static void main(String[] args) {
+		int in=new Integer(50);
+		Integer i=100;
+		System.out.println(i);
+		
+	}
+}
+

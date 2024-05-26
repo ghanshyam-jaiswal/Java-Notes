@@ -1,0 +1,23 @@
+package com.java;
+
+import java.security.Timestamp;
+import java.sql.Time;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+@Entity
+public class Person {
+	@Id
+	private int id;
+	private String name;
+	private List<Practice> practice;
+	
+}

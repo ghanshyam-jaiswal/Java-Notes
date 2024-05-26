@@ -1,0 +1,33 @@
+package com.jsp;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		List<Integer> nums= List.of(1,2,5,3,4,3,6);
+		int target =6;
+		
+		Set<Integer> s1=new HashSet<>();
+		List<List<Integer>>result =new ArrayList<>();
+
+		for(int num :nums) {
+			int c1 = target-num;
+		 if(s1.contains(c1)) {
+				List<Integer> p1 = List.of(num, c1);
+				result.add(p1);
+				
+			}
+		 s1.add(num);
+		}
+		System.out.println("number sum is equal to " + target + ";");
+		for(List<Integer> p1:result) {
+			System.out.println(p1);
+		}
+	}
+
+}

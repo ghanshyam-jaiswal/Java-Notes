@@ -1,0 +1,21 @@
+package com.java;
+
+import java.rmi.StubNotFoundException;
+
+public class StudentChildClass extends Student{
+
+	public static void main(String[] args) {
+
+		Student student1=new Student();
+		student1.setHeight(5.5);
+		student1.setWeight(60);
+		
+		Student student2=new Student();
+		student2.setHeight(5.5);
+		student2.setWeight(60);
+		
+		System.out.println(student1.equals(student2));
+				
+	}
+
+}

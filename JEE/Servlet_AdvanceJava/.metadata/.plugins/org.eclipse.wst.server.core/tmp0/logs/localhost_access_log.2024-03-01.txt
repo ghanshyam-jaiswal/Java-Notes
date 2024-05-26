@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:09:11:32 +0530] "GET /formExample/ HTTP/1.1" 404 768
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:09:11:41 +0530] "GET /formExample/form.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:09:12:12 +0530] "POST /formExample/save HTTP/1.1" 200 14
+127.0.0.1 - - [01/Mar/2024:10:23:01 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:10:23:02 +0530] "GET /SessionExample/ HTTP/1.1" 200 344
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:10:23:14 +0530] "POST /SessionExample/session HTTP/1.1" 200 41
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:10:23:27 +0530] "GET /SessionExample/session2 HTTP/1.1" 404 779
+127.0.0.1 - - [01/Mar/2024:10:46:28 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:10:46:29 +0530] "GET /SessionExample/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:10:46:40 +0530] "GET /SessionExample/index.html HTTP/1.1" 200 344
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:10:46:46 +0530] "POST /SessionExample/session HTTP/1.1" 500 1493
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:10:51:36 +0530] "POST /SessionExample/session HTTP/1.1" 200 38
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:10:52:02 +0530] "GET /SessionExample/session2 HTTP/1.1" 404 779
+0:0:0:0:0:0:0:1 - - [01/Mar/2024:11:01:52 +0530] "POST /SessionExample/session HTTP/1.1" 200 38

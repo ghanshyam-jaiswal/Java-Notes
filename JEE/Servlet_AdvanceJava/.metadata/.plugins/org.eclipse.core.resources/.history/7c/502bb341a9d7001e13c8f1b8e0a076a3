@@ -1,0 +1,27 @@
+package com.java;
+
+public class User {
+		
+	private int id;
+	private String name;
+	private int age;
+	private String email;
+	private long phone ;
+	private String password;
+	
+	public static void main(String[] args) {
+		
+//		System.out.println("Select Options:\n1.Login\n2.");
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

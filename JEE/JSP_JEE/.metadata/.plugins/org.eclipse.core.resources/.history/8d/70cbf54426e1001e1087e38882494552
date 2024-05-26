@@ -1,0 +1,19 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String");
+		String name=sc.nextLine();
+		char c[]=name.toCharArray();
+		
+		for(int i=1;i<c.length;i++) {
+			if(Character.isUpperCase(c[i])) {
+				
+			}
+		}
+		
+		
+	}
+}

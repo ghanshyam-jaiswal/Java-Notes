@@ -1,0 +1,21 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String");
+		String name=sc.nextLine();
+		int sum=0;
+		for(int i=0;i<name.length();i++) {
+			if(Character.isDigit(name.charAt(i))) {
+				 int store=Character.getNumericValue(name.charAt(i));
+				 if(store%2==0) {
+					 sum=sum+store;
+				 }
+			}
+		}System.out.println("even sum:"+sum);
+		
+		
+	}
+}

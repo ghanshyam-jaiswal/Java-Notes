@@ -1,0 +1,21 @@
+package com.java;
+import java.util.Scanner;
+public class Practice {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String");
+		String name=sc.nextLine();
+		
+		String add="";
+		for(int i=1;i<name.length();i++) {
+			add=add+Character.getNumericValue(name.charAt(i));
+		}
+		if(name.equals(add)) {
+			System.out.println("palindrome");
+		}else {
+			System.out.println("not palindrome");
+		}
+		
+	}
+}

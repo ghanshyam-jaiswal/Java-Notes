@@ -1,0 +1,19 @@
+package com.jsp.springdatajpa.repository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
+import com.jsp.springdatajpa.Car;
+
+@Service
+public class CarService {
+
+	@Autowired
+	CarRepository carRepository;
+	
+	public Car saveCar(Car car) {
+		return carRepository.save(car);
+	}
+
+}

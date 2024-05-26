@@ -1,0 +1,12 @@
+package com.java;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class User {
+	private int id;
+	private String name;
+	@Autowired
+	private Mobile mobile;
+}

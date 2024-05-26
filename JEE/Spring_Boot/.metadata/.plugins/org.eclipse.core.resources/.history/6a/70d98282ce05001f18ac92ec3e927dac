@@ -1,0 +1,9 @@
+package com.jsp.springdatajpa.controller;
+
+public class CarController {
+
+	public CarController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

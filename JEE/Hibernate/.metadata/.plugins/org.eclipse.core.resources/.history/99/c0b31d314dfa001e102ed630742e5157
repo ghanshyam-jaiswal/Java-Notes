@@ -1,0 +1,38 @@
+package com.java;
+
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+public class PersistControl {
+	public static void main(String[] args) {
+		EntityManagerFactory emf=Persistence.createEntityManagerFactory("java");
+		EntityManager em= emf.createEntityManager();
+		EntityTransaction et=em.getTransaction();
+		
+		
+		Practice p=new Practice();
+		p.setId(111);
+		p.setName("shyam");
+		p.setEmail("shyam@gmail.com");
+		p.setContact(7000365544L);
+		p.setLocation("gurgaon");
+		
+//		et.begin();
+//		em.persist(p);
+//		et.commit();
+//		System.out.println("done");	
+		
+		et.begin();
+		Query query=em.createQuery("select s from Practice s where s.id=:id and s.name=?5");
+		query.setParameter("id", 111);
+		query.setParameter("name", "ggggg");
+		et.commit();
+	System.out.println(query.getResultList());	
+		
+		
+	}
+}
